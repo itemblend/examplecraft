@@ -10,7 +10,7 @@ world.afterEvents.entitySpawn.subscribe((ibs_fire_resistence_e) => {
 		const ItemComponent = itemEntity.getComponent("item");
 		let itemId = ItemComponent.itemStack.typeId;
 		if (_iFRId_0.includes(itemId)) {
-			itemEntity.triggerEvent("ibs:luisR.no_fire_damage");
+			itemEntity.triggerEvent("ibs:ifr.no_fire_damage");
 		};
 	};
 });
